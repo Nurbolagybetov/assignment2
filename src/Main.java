@@ -13,6 +13,7 @@ public class Main {
         System.out.println("Size of list after clear: " + arrayList.size());
         System.out.println("Is list empty: " + arrayList.isEmpty());
 
+
         System.out.println("\nTesting MyLinkedList:");
         MyList<String> linkedList = new MyLinkedList<>();
         linkedList.add("A");

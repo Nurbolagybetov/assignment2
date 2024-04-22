@@ -30,6 +30,7 @@ public class MyLinkedList<T> implements MyList<T> {
     public void add(int index, T item) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index out of bounds");
+
         }
         if (index == size) {
             addLast(item);
