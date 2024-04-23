@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Testing MyArrayList:");
-        MyList<Integer> arrayList = new MyArrayList<>();
+        MyArrayList<Integer> arrayList = new MyArrayList<>();
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);
@@ -15,7 +15,7 @@ public class Main {
 
 
         System.out.println("\nTesting MyLinkedList:");
-        MyList<String> linkedList = new MyLinkedList<>();
+        MyLinkedList<String> linkedList = new MyLinkedList<>();
         linkedList.add("A");
         linkedList.add("B");
         linkedList.add("C");
@@ -26,5 +26,13 @@ public class Main {
         linkedList.clear();
         System.out.println("Size of list after clear: " + linkedList.size());
         System.out.println("Is list empty: " + linkedList.isEmpty());
+
+        System.out.println("\nTesting MyStack:");
+        MyStack<Integer> stack = new MyStack<>();
+        stack.push(2);
+        stack.push(3);
+        stack.push(6);
+        System.out.println(stack.getSize());
+
     }
 }
