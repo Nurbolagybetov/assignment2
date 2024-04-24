@@ -81,6 +81,9 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public void removeFirst() {
+        if (isEmpty()) {
+            throw new IllegalStateException("List is empty");
+        }
         remove(0);
     }
 

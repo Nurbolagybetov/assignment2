@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Testing MyArrayList:");
@@ -34,5 +36,11 @@ public class Main {
         stack.push(6);
         System.out.println(stack.getSize());
 
+        System.out.println("\nTesting MyQueue:");
+        MyQueue<Integer> queue = new MyQueue<>();
+        queue.addBack(1);
+        queue.addBack(2);
+        queue.dequeue();
+        System.out.println(queue.size());
     }
 }
